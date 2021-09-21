@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imersão Dev Alura - Aula 01</title>
+    <link rel="stylesheet" href="/calculador-media/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="page-title">Calculadora de média</h1>
+      <p class="page-subtitle">Insira notas válidas de 0 até 10</p>
+    </div>
+    <div class="notas">
+      <p>Nota 1: <input type="number" id="nota1" placeholder="Ex: 8.5" /></p>
+      <p>Nota 2: <input type="number" id="nota2" placeholder="Ex: 8" /></p>
+      <p>Nota 3: <input type="number" id="nota3" placeholder="Ex: 8.5" /></p>
+      <p>Nota 4: <input type="number" id="nota4" placeholder="Ex: 8.5" /></p>
+      <input
+        type="submit"
+        name="enviar"
+        value="Enviar"
+        onclick="calcularMedia()"
+      />
+    </div>
+    <div id="resultado"></div>
+    <div id="foto"><img id="imagem" src="" /></div>
+    <div class="nova-media">
+      <input id="limpar" type="reset" value="Nova média" onclick="limpar()" />
+    </div>
+    <script src="/calculador-media/script.js"></script>
+  </body>
+</html>
